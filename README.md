@@ -166,3 +166,5 @@ This project can be used to demonstrate:
 * Troubleshooting identity flows
 * Experience with Entra ID authentication
 * Ability to analyze real-world authentication issues
+
+  [More details here](docs/interview-notes.md)
