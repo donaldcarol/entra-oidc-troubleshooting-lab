@@ -48,6 +48,7 @@ sequenceDiagram
     E->>A: ID token / Access token
     A->>U: Create session and grant access
 ```
+--- 
 
 ## High-Level Architecture
 
@@ -60,7 +61,6 @@ flowchart LR
     W -.optional access token.-> API[Protected API]
 
 ```
-
 
 ---
 
