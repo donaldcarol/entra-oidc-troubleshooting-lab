@@ -62,6 +62,28 @@ flowchart LR
 
 ```
 
+## End-to-End Flow (Web App + API)
+
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant W as Web App
+    participant E as Entra ID
+    participant API as Protected API
+
+    U->>W: Access application
+    W->>E: Redirect for login
+    U->>E: Authenticate
+    E->>W: Authorization code
+    W->>E: Exchange code for tokens
+    E->>W: ID token + Access token (API scope)
+    W->>API: Call API (Bearer token)
+    API->>API: Validate token (aud, iss, signature)
+    API->>W: Response
+    W->>U: Display data
+
+```
+
 ---
 
 ## 🔐 Authentication Concepts
