@@ -47,8 +47,11 @@ sequenceDiagram
     A->>E: Exchange code for tokens
     E->>A: ID token / Access token
     A->>U: Create session and grant access
-```
+
+```   
+
 --- 
+
 
 ## High-Level Architecture
 
@@ -60,7 +63,7 @@ flowchart LR
     W --> P[Protected Route]
     W -.optional access token.-> API[Protected API]
 
-```
+```  
 
 ---
 
