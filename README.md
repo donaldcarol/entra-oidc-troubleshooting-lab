@@ -112,47 +112,17 @@ npm install
 npm start
 ```
 
----
-
 ## 🔍 Troubleshooting Scenarios
 
-### 1. Redirect URI Mismatch
+This project covers common identity-related issues such as:
 
-**Symptom:** Login fails with redirect error
-**Cause:** Redirect URI does not match Entra configuration
-**Fix:** Ensure exact match (including http/https and trailing slash)
+- Redirect URI mismatch  
+- Invalid client secret  
+- Session persistence issues  
+- Wrong token audience  
 
----
-
-### 2. User Authenticated but Access Denied
-
-**Symptom:** User logs in but cannot access application
-**Cause:** Missing roles/claims or incorrect authorization logic
-**Fix:** Verify token claims and app role assignments
-
----
-
-### 3. Infinite Login Loop
-
-**Symptom:** User is redirected repeatedly to login
-**Cause:** Session not persisted or token not stored
-**Fix:** Check session handling and cookies
-
----
-
-### 4. API Returns 401 Unauthorized
-
-**Symptom:** API call fails after login
-**Cause:** Invalid or expired access token
-**Fix:** Validate token audience, scope, and expiration
-
----
-
-### 5. Session Lost After Login
-
-**Symptom:** User must log in repeatedly
-**Cause:** Session timeout or cookie issues
-**Fix:** Review session configuration and browser behavior
+👉 See full details here:  
+[Troubleshooting Scenarios](docs/troubleshooting-scenarios.md)
 
 ---
 
