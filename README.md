@@ -32,7 +32,7 @@ User → Web App → Microsoft Entra ID → Web App (callback) → Protected Res
 6. The user session is created
 7. The app uses the access token (optional) to call APIs
 
-   ## Authentication Flow Diagram
+## Authentication Flow Diagram
 
 ```mermaid
 sequenceDiagram
@@ -48,10 +48,7 @@ sequenceDiagram
     E->>A: ID token / Access token
     A->>U: Create session and grant access
 
-```   
-
---- 
-
+```
 
 ## High-Level Architecture
 
@@ -63,7 +60,7 @@ flowchart LR
     W --> P[Protected Route]
     W -.optional access token.-> API[Protected API]
 
-```  
+```
 
 ---
 
