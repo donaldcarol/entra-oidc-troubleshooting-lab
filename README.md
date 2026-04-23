@@ -158,10 +158,9 @@ This project covers common identity-related issues such as:
 ## 🧠 Interview Notes
 
 This project can be used to demonstrate:
-
 * Understanding of OAuth2 and OpenID Connect
 * Troubleshooting identity flows
 * Experience with Entra ID authentication
 * Ability to analyze real-world authentication issues
 
-  [More details here](docs/interview-notes.md)
+[More details here](docs/interview-notes.md)
